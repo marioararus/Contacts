@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="contactFirstName">Contact First Name</string>
+    <string name="contactLastName">Contact Last Name</string>
+    <string name="contactNumber">Contact Number</string>
+    <string name="addInContacts">Add to contacts</string>
+
+</resources>
