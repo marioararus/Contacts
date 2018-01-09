@@ -4,5 +4,7 @@
     <string name="contactLastName">Contact Last Name</string>
     <string name="contactNumber">Contact Number</string>
     <string name="addInContacts">Add to contacts</string>
+    <string name="locationActivity">Location Activity</string>
+    <string name="title">Location Name</string>
 
 </resources>

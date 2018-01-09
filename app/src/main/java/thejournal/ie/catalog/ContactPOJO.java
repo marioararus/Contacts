@@ -1,9 +1,5 @@
 package thejournal.ie.catalog;
 
-/**
- * Created by Bogdan Roatis on 12/19/2017.
- */
-
 public class ContactPOJO {
     private int id;
     private String firstName;

@@ -2,10 +2,6 @@ package thejournal.ie.catalog;
 
 import android.provider.BaseColumns;
 
-/**
- * Created by Bogdan Roatis on 12/19/2017.
- */
-
 public class ContactsTabel implements BaseColumns {
     public static final String TABLE_NAME = "contacts";
     public static final String COLUMN_FIRST_NAME = "first_name";

@@ -7,10 +7,6 @@ import android.database.Cursor;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Bogdan Roatis on 12/19/2017.
- */
-
 public class ContactsDAO {
     private SQLiteHelperCustom dbHelper;
     private String[] projection = {
