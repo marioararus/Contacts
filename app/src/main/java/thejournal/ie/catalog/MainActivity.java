@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
                         switchFragment(new InsertDataFragment());
                         break;
                     case R.id.view_data:
+                        switchFragment(new ViewDataFragment());
                         break;
                     case R.id.location_details:
                         switchFragment(new LocationFragment());

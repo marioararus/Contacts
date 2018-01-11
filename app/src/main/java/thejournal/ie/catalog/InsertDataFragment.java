@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -19,7 +20,6 @@ import java.util.List;
 
 public class InsertDataFragment extends Fragment implements View.OnClickListener{
     private Button btnAddContact;
-    private TextView tvDisplayContact;
     private EditText etContactFirstName;
     private EditText etContactLastName;
     private EditText etContactNumber;
@@ -35,7 +35,6 @@ public class InsertDataFragment extends Fragment implements View.OnClickListener
         super.onViewCreated(view, savedInstanceState);
         contactsDao = new ContactsDAO(getActivity());
         btnAddContact = view.findViewById(R.id.btn_add_contact);
-        tvDisplayContact = view.findViewById(R.id.tv_contact);
         etContactFirstName = view.findViewById(R.id.et_contact_first_name);
         etContactLastName = view.findViewById(R.id.et_contact_last_name);
         etContactNumber = view.findViewById(R.id.et_contact_number);
@@ -50,12 +49,7 @@ public class InsertDataFragment extends Fragment implements View.OnClickListener
                 List<ContactPOJO> contacts;
                 contact = new ContactPOJO(etContactFirstName.getText().toString(), etContactLastName.getText().toString(), etContactNumber.getText().toString());
                 contactsDao.insert(contact);
-                contacts = contactsDao.readContacts();
-                StringBuilder builder = new StringBuilder();
-                for (ContactPOJO c : contacts) {
-                    builder.append(c.getId()).append(" ").append(c.getFirstName()).append(" ").append(c.getLastName()).append(" ").append(c.getPhoneNumber()).append("\n");
-                }
-                tvDisplayContact.setText(builder.toString());
+                Toast.makeText(getActivity(), "Success", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
