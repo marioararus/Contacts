@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_item1"
-        android:icon="@drawable/ic_looks_one_black_24dp"
+        android:id="@+id/insert_data"
+        android:icon="@drawable/ic_view_agenda_black_24dp"
         android:title="@string/text_insert" />
     <item
-        android:id="@+id/action_item2"
-        android:icon="@drawable/ic_looks_two_black_24dp"
+        android:id="@+id/view_data"
+        android:icon="@drawable/ic_view_agenda_black_24dp"
         android:title="@string/text_view" />
     <item
-        android:id="@+id/action_item3"
+        android:id="@+id/location_details"
         android:enabled="true"
-        android:icon="@drawable/ic_looks_3_black_24dp"
+        android:icon="@drawable/ic_view_agenda_black_24dp"
         android:title="@string/text_json"
         app:showAsAction="ifRoom" />
 </menu>
