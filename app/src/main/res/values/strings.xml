@@ -6,6 +6,9 @@
     <string name="addInContacts">Add to contacts</string>
     <string name="locationActivity">Location Activity</string>
     <string name="title">Location Name</string>
+    <string name="text_insert">Insert</string>
+    <string name="text_view">View</string>
+    <string name="text_json">Location</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
