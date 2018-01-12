@@ -16,19 +16,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         switchFragment(new InsertDataFragment());
+        final Fragment insertDataFragment = new InsertDataFragment();
+        final Fragment viewDataFragment = new ViewDataFragment();
+        final Fragment locationFragment = new LocationFragment();
+        
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.insert_data:
-                        switchFragment(new InsertDataFragment());
+                        switchFragment(insertDataFragment);
                         break;
                     case R.id.view_data:
-                        switchFragment(new ViewDataFragment());
+                        switchFragment(viewDataFragment);
                         break;
                     case R.id.location_details:
-                        switchFragment(new LocationFragment());
+                        switchFragment(locationFragment);
                         break;
                 }
                 return true;
